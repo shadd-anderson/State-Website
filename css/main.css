@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #77a45c;
+    background-color: #094700;
+}
+
+header {
+    background-image: url(/img/banner_photo.jpg);
+    background-size: cover;
+    background-position: center 40%;
+    background-repeat: no-repeat;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+header h1 {
+    font-family: "Lucida Calligraphy", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-size: 48px;
+    color: white;
+    text-shadow: -3px 3px 3px #021a00;
+    text-align: center;
+    position: absolute;
+    bottom: 5px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    line-height: 250px;
+}
+
+@media (width > 1600px) {
+    header h1 {
+        font-size: 60px;
+    }
+}
+
+@media (width <= 940px) {
+    header h1 {
+        font-size: 36px;
+    }
+}
+
+@media (width <= 705px) {
+    header h1 {
+        line-height: unset;
+        word-wrap: break-word;
+    }
+}
+
+nav {
+    list-style-type: none;
+    min-width: 300px;
+    position: relative;
+}
+
+nav ul {
+    margin: 0;
+    padding-left: 4%;
+}
+
+nav li:hover {
+    background-color: #0a6300;
+    cursor: pointer;
+}
+
+nav li {
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+}
+
+li a {
+    text-decoration: none;
+    display: block;
+    padding: 20px max(20px, 2%);
+    color: #77a45c;
+}
+
+section {
+    padding: 6% 2% 2%;
+}
+
+.article-img {
+    margin: 0 auto 3%;
+    display: block;
+    width: 70%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+aside {
+    background-color: #021a00;
+}
+
+#container {
+    display: flex;
+    padding: 0 2%;
+}
+
+#container > section {
+    flex: 0 4 85%;
+}
+
+#container > aside {
+    flex: 0 1 15%;
+    margin: 5% 0 5%;
+    padding: 2% 1%;
+    text-align: center;
+}
+
+#state-flag {
+    width: 100%;
+}
+
+.fact-list {
+    text-align: left;
+    list-style-type: none;
+    padding: 3% 0;
+    margin-top: 0;
+
+    li::before {
+        content: "🌲 "
+    }
+}
+
+ol {
+    text-align: left;
+}
+
+h3 {
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+p {
+    margin-top: 5px;
+}
+
+footer {
+    background-color: #afffb6;
+    height: 100px;
+    color: #265f26;
+    text-align: center;
+}
+
+#footer-text {
+    margin: auto 0;
+    line-height: 100px;
+}
+
+#city-link {
+    position: relative;
+}
+
+#city-link:hover #dropdown {
+    display: block;
+}
+
+#dropdown {
+    position: absolute;
+    background-color: #0a6300;
+    display: none;
+
+    ul {
+        padding: 0;
+    }
+
+    li:hover {
+        padding: 0;
+        background-color: #10830c;
+        width: 100%;
+    }
+}
+
+#leavenworth-header {
+    background-image: url(/img/leavenworth-header.jpg);
+}
