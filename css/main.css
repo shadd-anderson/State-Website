@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-image: url(/img/banner_photo.jpg);
+    background-image: url(../img/banner_photo.jpg);
     background-size: cover;
     background-position: center 40%;
     background-repeat: no-repeat;
@@ -179,5 +179,5 @@ footer {
 }
 
 #leavenworth-header {
-    background-image: url(/img/leavenworth-header.jpg);
+    background-image: url(../img/leavenworth-header.jpg);
 }
