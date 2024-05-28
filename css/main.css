@@ -1,8 +1,30 @@
+aside {
+    background-color: #021a00;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: #77a45c;
     background-color: #094700;
+}
+
+footer {
+    background-color: #afffb6;
+    height: 100px;
+    color: #265f26;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+h3 {
+    text-decoration: underline;
+    margin-bottom: 5px;
 }
 
 header {
@@ -30,23 +52,11 @@ header h1 {
     line-height: 250px;
 }
 
-@media (width > 1600px) {
-    header h1 {
-        font-size: 60px;
-    }
-}
-
-@media (width <= 940px) {
-    header h1 {
-        font-size: 36px;
-    }
-}
-
-@media (width <= 705px) {
-    header h1 {
-        line-height: unset;
-        word-wrap: break-word;
-    }
+li a {
+    text-decoration: none;
+    display: block;
+    padding: 20px max(20px, 2%);
+    color: #77a45c;
 }
 
 nav {
@@ -55,9 +65,10 @@ nav {
     position: relative;
 }
 
-nav ul {
-    margin: 0;
-    padding-left: 4%;
+nav li {
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
 }
 
 nav li:hover {
@@ -65,17 +76,17 @@ nav li:hover {
     cursor: pointer;
 }
 
-nav li {
-    display: inline-block;
-    font-weight: bold;
-    text-align: center;
+nav ul {
+    margin: 0;
+    padding-left: 4%;
 }
 
-li a {
-    text-decoration: none;
-    display: block;
-    padding: 20px max(20px, 2%);
-    color: #77a45c;
+ol {
+    text-align: left;
+}
+
+p {
+    margin-top: 5px;
 }
 
 section {
@@ -88,34 +99,21 @@ section {
     width: 70%;
 }
 
-h2 {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 15px;
-}
-
-aside {
-    background-color: #021a00;
-}
-
-#container {
-    display: flex;
+.city-container {
     padding: 0 2%;
 }
 
-#container > section {
-    flex: 0 4 85%;
-}
-
-#container > aside {
-    flex: 0 1 15%;
-    margin: 5% 0 5%;
+.city-container > aside {
+    float: right;
+    max-width: 250px;
     padding: 2% 1%;
     text-align: center;
-}
+    margin-top: 2%;
+    margin-left: 2%;
 
-#state-flag {
-    width: 100%;
+    img {
+        width: 100%;
+    }
 }
 
 .fact-list {
@@ -129,29 +127,8 @@ aside {
     }
 }
 
-ol {
-    text-align: left;
-}
-
-h3 {
-    text-decoration: underline;
-    margin-bottom: 5px;
-}
-
-p {
-    margin-top: 5px;
-}
-
-footer {
-    background-color: #afffb6;
-    height: 100px;
-    color: #265f26;
-    text-align: center;
-}
-
-#footer-text {
-    margin: auto 0;
-    line-height: 100px;
+.main-article {
+    padding: 2%;
 }
 
 #city-link {
@@ -160,6 +137,22 @@ footer {
 
 #city-link:hover #dropdown {
     display: block;
+}
+
+#container {
+    display: flex;
+    padding: 0 2%;
+}
+
+#container > aside {
+    flex: 0 1 15%;
+    margin: 5% 0 5%;
+    padding: 2% 1%;
+    text-align: center;
+}
+
+#container > section {
+    flex: 0 4 85%;
 }
 
 #dropdown {
@@ -178,6 +171,47 @@ footer {
     }
 }
 
+#footer-text {
+    margin: auto 0;
+    line-height: 100px;
+}
+
 #leavenworth-header {
     background-image: url(../img/leavenworth-header.jpg);
+    background-position: center 60%;
+}
+
+#state-flag {
+    width: 100%;
+}
+
+@media (width > 1600px) {
+    header h1 {
+        font-size: 60px;
+    }
+}
+
+@media (width <1000px) {
+    .city-container {
+        margin-right: 5%;
+    }
+    .city-container > aside {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+        padding-right: 2%;
+    }
+}
+
+@media (width <= 940px) {
+    header h1 {
+        font-size: 36px;
+    }
+}
+
+@media (width <= 705px) {
+    header h1 {
+        line-height: unset;
+        word-wrap: break-word;
+    }
 }
