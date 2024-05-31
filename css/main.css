@@ -87,6 +87,7 @@ ol {
 
 p {
     margin-top: 5px;
+    font-size: 1.3em;
 }
 
 section {
@@ -179,6 +180,16 @@ section {
 #leavenworth-header {
     background-image: url(../img/leavenworth-header.jpg);
     background-position: center 60%;
+}
+
+#olympia-header {
+    background-image: url(../img/olympia-header.jpg);
+    background-position: center 15%;
+}
+
+#spokane-header {
+    background-image: url(../img/spokane-header.jpg);
+    background-position: center 40%;
 }
 
 #state-flag {
