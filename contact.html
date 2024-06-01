@@ -30,12 +30,14 @@
     </nav>
     <form action="#">
         <h2>Please fill out this form to contact us and we will reply when we are able!</h2>
-        <label for="form-name">Name:</label>
-        <input type="text" id="form-name" name="form-name" />
+        <label for="form-first-name">Name:</label>
+        <input type="text" id="form-first-name" name="form-first-name" placeholder="FirstName" />
+        <label for="form-last-name">Name:</label>
+        <input type="text" id="form-last-name" name="form-last-name" placeholder="LastName" />
         <label for="form-email">Email:</label>
-        <input type="text" id="form-email" name="form-email" />
+        <input type="text" id="form-email" name="form-email" placeholder="email@email.com" />
         <label for="form-confirm-email">Confirm Email:</label>
-        <input type="text" id="form-confirm-email" name="form-confirm-email" />
+        <input type="text" id="form-confirm-email" name="form-confirm-email" placeholder="email@email.com" />
         <label for="form-comments">Comments:</label>
         <textarea name="form-comments" id="form-comments" cols="30" rows="20" placeholder="Your text here."></textarea>
         <button type="button" onclick="verifyEmails()">Submit</button>
