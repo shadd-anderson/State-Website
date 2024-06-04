@@ -25,23 +25,31 @@
                 </div>
             </li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/List_of_states_and_territories_of_the_United_States">Other States</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/List_of_states_and_territories_of_the_United_States" target="_blank">Other States</a></li>
         </ul>
     </nav>
-    <form action="#">
-        <h2>Please fill out this form to contact us and we will reply when we are able!</h2>
-        <label for="form-first-name">Name:</label>
-        <input type="text" id="form-first-name" name="form-first-name" placeholder="FirstName" />
-        <label for="form-last-name">Name:</label>
-        <input type="text" id="form-last-name" name="form-last-name" placeholder="LastName" />
-        <label for="form-email">Email:</label>
-        <input type="text" id="form-email" name="form-email" placeholder="email@email.com" />
-        <label for="form-confirm-email">Confirm Email:</label>
-        <input type="text" id="form-confirm-email" name="form-confirm-email" placeholder="email@email.com" />
-        <label for="form-comments">Comments:</label>
-        <textarea name="form-comments" id="form-comments" cols="30" rows="20" placeholder="Your text here."></textarea>
-        <button type="button" onclick="verifyEmails()">Submit</button>
-    </form>
+    <section>
+        <form action="#">
+            <h2>Please fill out this form to contact us and we will reply when we are able!</h2>
+            <label for="form-first-name">Name:</label>
+            <input type="text" id="form-first-name" name="form-first-name" placeholder="FirstName" />
+            <label for="form-last-name">Name:</label>
+            <input type="text" id="form-last-name" name="form-last-name" placeholder="LastName" />
+            <label for="form-email">Email:</label>
+            <input type="text" id="form-email" name="form-email" placeholder="email@email.com" />
+            <label for="form-confirm-email">Confirm Email:</label>
+            <input type="text" id="form-confirm-email" name="form-confirm-email" placeholder="email@email.com" />
+            <label for="form-comments">Comments:</label>
+            <textarea name="form-comments" id="form-comments" cols="30" rows="20" placeholder="Your text here."></textarea>
+            <button type="button" onclick="verifyEmails()">Submit</button>
+        </form>
+    </section>
+    <aside id="contact-image">
+        <img src="img/contact-us-image.jpg" alt="Image of Lake Diablo in Washington State">
+    </aside>
+    <footer>
+        <h3 id="footer-text">Site created by Shadd Anderson</h3>
+    </footer>
 </body>
 <script type="application/javascript">
     function verifyEmails() {

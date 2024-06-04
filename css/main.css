@@ -212,6 +212,20 @@ textarea {
     flex: 0 4 85%;
 }
 
+#contact-image {
+    float: left;
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 50px 25%;
+    background-color: #094700;
+
+    img {
+        display: block;
+        width: 50%;
+    }
+}
+
 #dropdown {
     position: absolute;
     background-color: #0a6300;
